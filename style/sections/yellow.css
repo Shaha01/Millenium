@@ -11,8 +11,6 @@
     --blue2A: #2A2367;
 }
 
-
-
 .btn {
     padding: 22px 33px;
     border-radius: 5px;
@@ -23,25 +21,23 @@
     line-height: 15px;
 }
 
-/* root end */
-
 .yellow {
     border-radius: 10px;
     background: #F0D577;
-    padding-top: 26px;
+    padding: 26px 15px;
     height: 490px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .yellow-border {
     position: relative;
     border-radius: 10px;
     border: 1px solid #FFF;
-    /* margin-top: 26px; */
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -52,9 +48,7 @@
 }
 
 .yellow-box {
-    margin-top: 27px;
-    margin-bottom: 19px;
-    margin-right: 95px;
+    margin: 27px 0 19px 95px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -72,13 +66,60 @@
 .yellow-text {
     max-width: 212px;
     text-align: center;
-    margin-top: 6px;
-    margin-bottom: 14px;
+    margin: 6px 0 14px;
     color: var(--blue2A);
     font-family: var(--MB);
     font-size: 12px;
     line-height: 15px;
 }
 
+@media (min-width: 1200px) {
+    .yellow {
+        height: 500px;
+    }
+    .yellow-title,
+    .yellow-text {
+        font-size: 14px;
+    }
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .yellow {
+        height: 480px;
+    }
+    .yellow-title,
+    .yellow-text {
+        font-size: 13px;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .yellow {
+        height: 460px;
+    }
+    .yellow-title,
+    .yellow-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .yellow {
+        height: auto;
+        padding: 20px 10px;
+    }
+    .yellow-title,
+    .yellow-text {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .yellow {
+        padding: 15px 5px;
+    }
+    .yellow-title,
+    .yellow-text {
+        font-size: 10px;
+    }
+}

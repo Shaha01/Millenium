@@ -13,7 +13,6 @@
     --grey-price: #7C7C7C;
 }
 
-
 .header {
     margin-bottom: 82px;
 }
@@ -22,8 +21,7 @@
 
 .main {
     border-radius: 20px;
-    background: var(--2, #6B5AF9);
-
+    background: var(--purple6B);
 }
 
 .main-content {
@@ -89,7 +87,6 @@
 }
 
 .main-items__box {
-    /* width: 334px; */
     height: 713px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -109,9 +106,7 @@
     font-family: var(--MR);
     font-size: 12px;
     line-height: 15px;
-    /* list-style: circle; */
     margin-bottom: 12px;
-    /* margin-left: 14px; */
 }
 
 .main-box__button {
@@ -132,15 +127,87 @@
     line-height: 15px;
 }
 
-
-
-
-
-
-
-
-
-
 .footer {
     margin-top: 316px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) { /* Desktop */
+
+    .main-content__bg{
+        display: none;
+    }
+
+    .main-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .main-box__price-span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) { /* Laptop */
+    .main {
+        background: var(--purple6B);
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .main-items {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+
+    .main-text {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablet */
+    .main-items {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 50px;
+    }
+
+    .main-box__price {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile */
+    .main-box__button {
+        padding: 18px;
+    }
+
+    .main-text {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 360px) { /* Small Mobile */
+    .main-box__product {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .main-box__price-span {
+        font-size: 20px;
+    }
 }

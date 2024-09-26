@@ -11,8 +11,6 @@
     --blue2A: #2A2367;
 }
 
-
-
 .btn {
     padding: 22px 33px;
     border-radius: 5px;
@@ -22,8 +20,6 @@
     font-size: 12px;
     line-height: 15px;
 }
-
-/* root end */
 
 .product-box {
     margin-top: 25px;
@@ -37,17 +33,13 @@
 }
 
 .product-img__right {
-    margin-left: 107px;
+    margin-left: 70px;
     text-align: center;
 }
 
 .product-img__right-second {
     margin-left: 208px;
     text-align: center;
-}
-
-.product-img__right {
-    margin-left: 70px;
 }
 
 .product-title {
@@ -58,7 +50,6 @@
     margin-bottom: 17px;
 }
 
-
 .product-text {
     list-style: disc;
     color: var(--blue2A);
@@ -67,10 +58,9 @@
     line-height: 17px;
 }
 
-.prodict-button {
+.product-button {
     max-width: 275px;
     width: 100%;
-    /* margin-top: 50px; */
     margin: 100px auto 150px;
 }
 
@@ -79,3 +69,93 @@
     display: block;
 }
 
+@media (max-width: 1200px) { /* Desktop */
+    .product-img {
+        margin-right: 50px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px) { /* Laptop */
+    .product-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .product-img__right {
+        margin-left: 0;
+    }
+
+    .product-title {
+        font-size: 18px;
+    }
+
+    .product-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablet */
+    .btn {
+        padding: 18px 28px;
+        font-size: 11px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile */
+    .btn {
+        padding: 15px 20px;
+        font-size: 10px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .product-text {
+        font-size: 11px;
+    }
+
+    .product-button {
+        margin: 80px auto 120px;
+    }
+}
+
+@media (max-width: 360px) { /* Small Mobile */
+    .btn {
+        padding: 12px 15px;
+        font-size: 9px;
+    }
+
+    .product-title {
+        font-size: 12px;
+    }
+
+    .product-text {
+        font-size: 10px;
+    }
+
+    .product-button {
+        margin: 60px auto 100px;
+    }
+}

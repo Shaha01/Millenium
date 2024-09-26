@@ -11,8 +11,6 @@
     --blue2A: #2A2367;
 }
 
-
-
 .btn {
     padding: 22px 33px;
     border-radius: 5px;
@@ -22,8 +20,6 @@
     font-size: 12px;
     line-height: 15px;
 }
-
-/* root end */
 
 .levels-title {
     color: var(--blue2A);
@@ -59,8 +55,6 @@
 .levels-left__list-text:hover {
     color: var(--purple6B);
 }
-
-
 
 .levels-left__icons {
     display: block;
@@ -102,10 +96,7 @@
     margin-bottom: 55px;
 }
 
-.levels-box:nth-of-type(6n + 1) {
-    padding-bottom: 95px;
-}
-
+.levels-box:nth-of-type(6n + 1),
 .levels-box:nth-of-type(6n + 2) {
     padding-bottom: 95px;
 }
@@ -171,14 +162,83 @@
     margin-bottom: 15px;
 }
 
-
 .levels-box-text:nth-of-type(6n + 2) {
-    max-width: 544px;
-    width: 100%;
-    color: var(--blue2A);
-    font-family: var(--MR);
-    font-size: 18px;
-    line-height: 22px;
     margin-bottom: 42px;
 }
 
+@media (max-width: 1200px) { /* Desktop */
+    .levels-title {
+        font-size: 32px;
+    }
+
+    .levels-box__title {
+        font-size: 22px;
+    }
+
+    .levels-left__list-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) { /* Laptop */
+    .levels-content {
+        flex-direction: column;
+    }
+
+    .levels-left {
+        margin-bottom: 20px;
+    }
+
+    .levels-title {
+        font-size: 28px;
+    }
+
+    .levels-left__list-text {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablet */
+    .btn {
+        padding: 18px 28px;
+        font-size: 11px;
+    }
+
+    .levels-title {
+        font-size: 24px;
+    }
+
+    .levels-left__list-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile */
+    .btn {
+        padding: 15px 20px;
+        font-size: 10px;
+    }
+
+    .levels-title {
+        font-size: 20px;
+    }
+
+    .levels-left__list-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) { /* Small Mobile */
+    .btn {
+        padding: 12px 15px;
+        font-size: 9px;
+    }
+
+    .levels-title {
+        font-size: 18px;
+    }
+
+    .levels-left__list-text {
+        font-size: 10px;
+    }
+}

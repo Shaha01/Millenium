@@ -11,7 +11,6 @@
     --blue2A: #2A2367;
 }
 
-
 .btn {
     padding: 22px 33px;
     border-radius: 5px;
@@ -21,8 +20,6 @@
     font-size: 12px;
     line-height: 15px;
 }
-
-/* root end */
 
 .main-office {
     width: 100%;
@@ -36,11 +33,9 @@
     background: #F4F8FF;
     height: 738px;
     padding-top: 65px;
-    /* padding-right: 98px; */
     padding-bottom: 187px;
-    /* padding-left: 100px; */
     display: grid;
-    grid-template-columns: 448px, 472px;
+    grid-template-columns: 448px 472px;
     position: relative;
     align-items: center;
 }
@@ -66,7 +61,6 @@
     font-family: var(--MR);
     font-size: 18px;
     line-height: 22px;
-    /* margin-right: 44px; */
     margin-bottom: 187px;
 }
 
@@ -80,10 +74,7 @@
 .regist-window {
     border-radius: 20px;
     background: var(--purple6B);
-    padding-top: 56px;
-    padding-left: 56px;
-    padding-bottom: 47px;
-    padding-right: 57px;
+    padding: 56px 57px 47px 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +138,7 @@
     font-family: var(--MB);
     font-size: 14px;
     line-height: 17px;
-    padding-top: 22px 0 !important;
+    padding: 22px 0 !important;
     width: 80%;
     border-radius: 5px;
 }
@@ -162,7 +153,6 @@
     position: absolute;
     right: -37px;
     top: 240px;
-
 }
 
 .regist-ponchik__icon {
@@ -183,3 +173,63 @@
     right: -11px;
 }
 
+@media (min-width: 1200px) {
+    .regist {
+        height: 800px;
+    }
+    .regist-title {
+        font-size: 40px;
+    }
+    .regist-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .regist {
+        height: 750px;
+    }
+    .regist-title {
+        font-size: 38px;
+    }
+    .regist-text {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .regist {
+        height: 700px;
+    }
+    .regist-title {
+        font-size: 36px;
+    }
+    .regist-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .regist {
+        height: auto;
+        padding: 20px 15px;
+    }
+    .regist-title {
+        font-size: 30px;
+    }
+    .regist-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .regist {
+        padding: 15px 10px;
+    }
+    .regist-title {
+        font-size: 28px;
+    }
+    .regist-text {
+        font-size: 14px;
+    }
+}
