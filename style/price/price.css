@@ -1,0 +1,146 @@
+@import url(../fonts.css);
+
+:root {
+    --MB: "Montserrat-Bold";
+    --MR: "Montserrat-Regular";
+    --M800: "Montserrat-800";
+    --M600: "Montserrat-600";
+    --M500: "Montserrat-500";
+    --white: #ffffff;
+    --grey: #C8C8C8;
+    --purple6B: #6B5AF9;
+    --blue2A: #2A2367;
+    --grey-price: #7C7C7C;
+}
+
+
+.header {
+    margin-bottom: 82px;
+}
+
+/* rooyt end */
+
+.main {
+    border-radius: 20px;
+    background: var(--2, #6B5AF9);
+
+}
+
+.main-content {
+    padding-top: 38px;
+    padding-right: 35px;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.main-text {
+    max-width: 682px;
+    width: 100%;
+    color: #FFF;
+    font-family: var(--M500);
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 85px;
+    max-height: 88px;
+}
+
+.main-content__bg {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+}
+
+.main-box__rate {
+    color: var(--grey-price);
+    font-family: var(--MR);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-box__product {
+    color: var(--blue2A);
+    font-family: var(--MB);
+    font-size: 18px;
+    line-height: 22px;
+    margin: 12px 0;
+}
+
+.main-box__price {
+    margin-bottom: 67px;
+    color: var(--blue2A);
+    font-family: var(--MR);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.main-box__price-span {
+    color: var(--blue2A);
+    font-family: var(--MB);
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.main-items {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+}
+
+.main-items__box {
+    /* width: 334px; */
+    height: 713px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--white);
+    padding-top: 22px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.main-box__list {
+    text-align: left;
+}
+
+.main-box__link {
+    color: var(--blue2A);
+    font-family: var(--MR);
+    font-size: 12px;
+    line-height: 15px;
+    /* list-style: circle; */
+    margin-bottom: 12px;
+    /* margin-left: 14px; */
+}
+
+.main-box__button {
+    position: absolute;
+    bottom: 31px;
+    padding: 22px;
+    border-radius: 5px;
+    background: #43CD93;
+    max-width: 210px;
+    width: 100%;
+}
+
+.main-box__btn {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--M800);
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    margin-top: 316px;
+}

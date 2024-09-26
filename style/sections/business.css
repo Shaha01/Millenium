@@ -1,0 +1,69 @@
+@import url(./font.css);
+
+:root {
+    --MB: "Montserrat-Bold";
+    --MR: "Montserrat-Regular";
+    --M800: "Montserrat-800";
+    --M600: "Montserrat-600";
+    --white: #ffffff;
+    --grey: #C8C8C8;
+    --purple6B: #6B5AF9;
+    --blue2A: #2A2367;
+}
+
+
+.btn {
+    padding: 22px 33px;
+    border-radius: 5px;
+    background: var(--purple6B);
+    color: var(--white);
+    font-family: var(--M800);
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/* root end */
+
+.business {
+    display: flex;
+}
+
+.business-about {
+    max-width: 544px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.business-title {
+    margin-top: 150px;
+    color: var(--blue2A);
+    font-family: var(--M800);
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 66px;
+}
+
+.business-title__span {
+    color: var(--purple6B);
+    font-family: var(--M800);
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.business-text {
+    color: var(--blue2A);
+    font-family: var(--MR);
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 22px;
+    max-width: 544px;
+    width: 100%;
+}
+
+.business-foto {
+    max-width: 644px;
+    width: 100%;
+    margin-right: -82px;
+    margin-top: 175px;
+}
+
